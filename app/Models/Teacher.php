@@ -12,4 +12,7 @@ class Teacher extends Model
     public function trainingCenter(){
         return $this ->belongsTo("app\models\trainingCenter");
     }
+    public function area(){
+        return $this ->belongsTo("app\models\Area");
+    }
 }
