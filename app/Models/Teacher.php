@@ -6,5 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Teacher extends Model
 {
-    //
+    public function courses(){
+        return $this ->belongsToMany("app\models\course");
+    }
+    public function trainingCenter(){
+        return $this ->belongsTo("app\models\trainingCenter");
+    }
 }
