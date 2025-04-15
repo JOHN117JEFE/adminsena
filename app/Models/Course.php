@@ -12,10 +12,10 @@ class Course extends Model
     }
     public function area()
     {
-       return $this ->bel0ongsTo("app\models\area");
+       return $this ->belongsTo("app\models\Area");
     }
     public function teachers(){
-        return $this->belongsToMany("app\models\teacher");
+        return $this->belongsToMany("Teacher::class");
     }
     public function trainingCenter(){
         return $this ->belongsTo("app\models\trainingCenter");
